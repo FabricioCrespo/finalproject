@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block content %}
+    <h1>Success!</h1>
+
+    Thank you ! if you want to visit us again, <br><br>
+    <form action="{{ url_for('identify') }}" method="get">
+            <div class="form-group"> <BR><br>
+                <button id="login" class="btn btn-primary" type="submit"> Log in!</button>
+            </div>
+    </form>
+    
+{% endblock %}

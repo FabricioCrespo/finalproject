@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block content %}
+
+<br><br> <h2> WEBGL examples for Computer graphics </h2> <br> <br> 
+
+<!--SOLO FUNCIONA CON METHOD POST-->
+<form action="{{ url_for('fog_effect') }}" method="post">
+        <button type="submit" class="btn btn-primary btn-sm" style="margin:5px;">Look for fog effect (press c keyboard)</button>
+</form>
+<form action="{{ url_for('texture') }}" method="post">
+    <button type="submit" class="btn btn-primary btn-sm" style="margin:5px;">Look for texture</button>
+</form>
+{% endblock %}
